@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Q molecular dynamics">
+    <title>Q for Molecular Dynamics &ndash; </title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure.css">
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="/css/layouts/side-menu.css">
+    <!--<![endif]-->
+</head>
+
+<body>
+<div id="layout">
+    <!-- Menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+    </a>
+
+    <div id="menu">
+        <div class="pure-menu pure-menu-open">
+            <a class="pure-menu-heading" href="../">Q</a>
+            <ul>
+                <li><a href="../#introduction">Introduction</a></li>
+                <li><a href="../#documentation">Documentation</a></li>
+                <li><a href="examples.html">Examples</a></li>
+                <li><a href="forcefields.html">Force Fields</a></li>
+                <!--                <li class="menu-item-divided pure-menu-selected">-->
+                <li><a href="download.html">Download</a></li>
+                <li><a href="../#evaluation">Evaluation</a></li>
+                <li><a href="../#license">License</a></li>
+                <li><a href="../#support">Support</a></li>
+                <li><a href="../#mailinglist">Mailing List</a></li>
+                <li><a href="http://www.icm.uu.se/research/csb/aqvist/">Åqvist Group</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="header">
+            <h1>Q - Examples</h1>
+
+            <h2>Some old examples predating Q version 5</h2>
+        </div>
+
+        <div class="content">
+
+
+            We are working on new tutorials.
+            Note: To run the simulations in the examples, you need to set up a directory with some files common to all
+            the examples,
+            as described below.
+            <h2 class="content-subhead">1. Linear interaction energy method for absolute binding free energy
+                calculations</h2>
+
+            For more information on the linear interaction energy (LIE) method, please see
+
+            Hansson et. al., J. Comput.-Aided Mol. Des., 12, 27-35, (1998)
+
+            <h3 class="content-subhead">1.1. Binding free energy of the glucose/galactose binding protein complex with glucose</h3>
+
+            Get all the files, as a tar file (for UNIX) or as a zip file (for MS Windows) to work with the example.
+            For the background and theory of this example please see
+            Åqvist and Mowbray, J. Biol. Chem.., 270, 9978-9981
+            In this example, we will calculate the affinity of the glucose/galactose binding protein for glucose by
+            sampling a
+            glucose molecule's interactions with water and in the binding site of the solvated protein.
+
+            <h3 class="content-subhead">1.2 Binding free energy of the fatty acid binding protein complex with stearate</h3>
+
+            Get all the files, as a tar file (for UNIX) or as a zip file (for MS Windows) to work with the example.
+            In this example, we will calculate the affinity of the fatty acid binding protein for stearate by sampling a
+            stearate
+            molecule's interactions with water and in the binding site of the solvated protein.
+
+            <h2 class="content-subhead">2. Free energy perturbation calculation of relative binding free energy</h2>
+
+
+            <h3 class="content-subhead">2.1. Relative binding free energy of methotrexate and an analogue for DHFR.</h3>
+
+            Get all the files, as a tar file (for UNIX) to work with the example.
+            For the background and theory of this example please see
+            Graffner Nordberg et al., J. Med. Chem. 2000, in press
+            In this example, we will calculate the relative free energy of binding of methotrexate and the methotrexate
+            analogue N-[4-[(2,4-diaminoquinazoline-6-yl)methoxycarbonyl]benzoyl] L-glutamic acid by free energy
+            perturbation simulations.
+            This sample is in a very crude state - no description is available yet, only the set of input files. The
+            most
+            important part of this example is the complicated FEP file, which makes use of most of Q's features for
+            redefining interaction parameters.
+
+            <h2 class="content-subhead">Setting up the samples directory</h2>
+
+            <ol>
+                <li>Download the compressed archive with files common to all the samples:</li>
+                <ul>
+                    <li>Tar file (for UNIX)</li>
+                    <li>Zip file (for MS Windows)</li>
+                </ul>
+
+                <li>Decompress the file:</li>
+                <ul>
+                    <li>on a UNIX system, use a command like:</li>
+                    <pre>tar -xvf qsamples_common.tar</pre>
+                    <li>on Windows, use your favourite zip software.</li>
+                </ul>
+                This step will create a directory called qsamples.
+
+                <li>Set up the Q programs:</li>
+                <ul>
+                    <li>A. Using the evaluation kit:</li>
+
+                    Extract the files from the evaluation kit archive file in the qsamples directory created in step 2.
+
+                    Add the qsamples directory to your search path.
+
+                    <li>B. Using the licensed programs:</li>
+
+                    Make sure the directory where the Q executables are is in your search path.
+                </ul>
+            </ol>
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Uppsala Internal Q-developers Meeting
+## First Meet and Greet
+### Monday, January 19, 2015
+---
+
+# Agenda
+
+1. coding
+
+2. website
+
+3. mailing list
+
+4. tutorials (make fully public)
+
+5. release schedule
+
+---
+
+# 1. coding
+
+Coderz = Alex, Beat, Irek, Masoud, Mauricio, Miha, Paul
+
+
+    1.1. UML diagram
+
+    1.2. developer manual  
+       guidelines for coding - best practices
+       documentation - markdown throughout + LaTeX?  
+       debugging - profilers  
+
+    1.3. test set - known results reproducibility
+
+    1.4. benchmark set - test for speed
+
+        1.4.1. serial
+
+        1.4.2. parallel
+
+---
+
+## 1.3. test set
+
+- water sphere alone
+
+- water sphere plus ions
+
+- alanine dipeptide and tripeptide 
+
+- n-butane (FEP comparison)
+
+- 2,4-quinazolinediamine
+
+
+---
+
+##What to test? -- Accuracy of simulations
+
+***"In principle, computer simulations should follow the important conservation laws***
+
+- ***Conservation of energy***
+- ***Conservation of momentum***
+- ***Conservation of angular momentum (not under periodic boundary conditions)***
+
+***Conservation of energy can be monitored by checking the ratio of the***
+***fluctuations in Total energy and Kinetic Energy.***
+
+***For a well behaved system the ratio R:***  
+***R = Delta Etot/Delta Ekin***  
+***should be less than 0.05.***"  
+**David van der S.**
+ 
+***Simple Quantitative Tests to Validate Sampling from Thermodynamic Ensembles.***  
+Michael Shirts. JCTC (2013), 9, 909-926
+
+---
+
+
+## 1.4. benchmark set
+
+###tests for speed
+
+- DHFR?
+
+AFAIK Ake Sandgren MPI implementation no known scaling benchmarks.  
+
+Any idea as to history of one-sided to point-to-point MPI?
+
+
+---
+
+# 2. website
+
+http://xray.bmc.uu.se/~aqwww/q/#mailinglist
+
+http://qwebsite.no-ip.org/
+
+In github for ease of versioning and portability.
+
+Plain html5 and css3 with pure js
+
+---
+
+# 3. mailing list
+
+qmoldyn@googlegroups.com
+
+https://groups.google.com/forum/#!forum/qmoldyn
+
+---
+
+# 4. tutorials (make fully public)
+
+update LaTeX sources for documentation and scripts.
+
+---
+
+# 5. release schedule
+
+Semantic Versioning 2.0.0 (http://semver.org)
+
+X, Y, Z
+
+X = Major - Major new implementation(s)
+
+Y = Minor - New minor implementations
+
+Z = Patch - Bug fixes
+
+
+Z Every three months?
+
+Y Every six months?
+
+X Every year?
+
+
+## Next meeting? - every two weeks -
+
+---
+
+# 6. Possible Improvements
+
+Fortran 2003
+
+```bash
+qdyn -v or --version
+
+qdyn -h or --help
+```
+
+other spherical boundary conditions -- beglov roux 1994 -- density volume fluctuations?
+
+charmm CMAP
+
+table lookups for non-bonded.
+
+GPU? only portland fortran.
+
+steepest descent and newton-raphson? 
+
+tip5p
+
+polarizable force-field                                                                         
+
+
+---
+
+
+class: center, middle
+# THE END
+
+
+
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

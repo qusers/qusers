@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+
+# Uppsala Internal Q-developers Meeting 
+## Second Meet and Greet 
+### Monday, February 2, 2015 
+---
+
+# Minutes
+
+1. next meeting
+
+2. code standards
+
+3. intended updates
+
+4. q-website / q-webserver
+
+
+---
+
+# 1. next meeting
+
+Monday, February 16, 3:00 - 3:30. Then split into groups, specially to
+take care  of cleaning the  multiple branches  and leave one  dev, and
+another 5.7 stable branch.
+
+I think we can  reduce the meeting to those doing the coding, so, the
+bosses can be informed  but it's a bit of a waste  of their time until
+we make  it to  the 5.8  Milestone. So, I'll  stop e-mailing  them for
+now. In practice that's how it worked today.
+
+Coderz = Alex, Beat, Irek, Masoud, Mauricio, Miha, Paul
+
+As today was quite disorganized I think  we need always to have a meet
+and greet  moderator who is  prepared with an  agenda, or we  can also
+define a  fixed agenda  for next  meetings and  still have  a prepared
+moderator. 
+
+---
+
+Please make suggestions. It would help a lot to get feedback on how to
+keep it as "short-and-sweet" as possible.
+
+I propose the following:
+
+A. Five minute chat of what we have worked on, or seen a new cool trick
+   for fortran, or a weird bug,  or anything at all to report regarding
+   coding and Q.  To keep it short (as we need to  concentrate on more
+   pressing results for our bosses) I propose that only three of us per
+   meeting will give  these chats. I think we can  start with the order
+   in the coderz list, that is, in  two weeks Alex, Beat and Irek give
+   a five  minute, informal chat(very  very "ta det lugnt"),  then the
+   next three and so on.
+
+B. Then the moderator spends the next fifteen minutes on breaking down
+   where we are at,  and where we need to go.  Suggestions on who does
+   the moderator  job are  open. Should  we just  rotate it  every two
+   weeks?, or pick a set of  us to moderate? Or democratically elect a
+   moderator/benevolent dictator?
+
+C. All work and no play makes jack a dull boy.  I promise to have
+   cookies and coffee/tea available next time.
+
+
+---
+
+# 2. code standards
+
+    2.1. Agreed two spaces instead of tabs.
+
+    2.2. Needed clean test set - known results reproducibility
+
+    2.3. benchmark set - test for speed
+
+        2.3.1. serial
+
+        2.3.2. parallel
+
+---
+
+## 2.2. test set
+
+- water sphere alone
+
+- water sphere plus ions
+
+- alanine dipeptide  and tripeptide (typical  conformational stability
+  test. Ramachandran plot.)
+
+- existing one - anyone know what this ligand is?
+
+- n-butane (FEP comparison Beglov-Roux 1994)
+
+- 2,4-quinazolinediamine - not specially  significant apart from being
+  the Q-logo molecule and one  of the first explored antimalarial DHFR
+  inhibitors.
+
+- DHFR
+
+---
+
+# 3. Intended updates
+
+- Alex wants to get busy on implementing LINC and/or RATTLE
+
+- Christopher, Mauricio  and GPCR  peeps volunteered dictatorially by
+  Mauricio to help bring up to date the qtutorials.
+
+
+---
+
+# 4. q-website / q-webserver
+
+http://xray.bmc.uu.se/~aqwww/q
+
+http://qwebsite.no-ip.org/
+
+Mauricio will  take care  of getting an  icm name for  it and  a fixed
+IP. The box  is ready and configured  with Fedora 21. I  think this is
+important. Specially  for   offering   password  restricted   stable
+binaries and looking decent online. As soon as it's set-up I'll create
+accounts for all. 
+
+
+---
+
+
+class: center, middle
+# THE END
+
+
+
+
+
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
+

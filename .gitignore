@@ -1,2 +1,5 @@
+bin/**
+include/**
+lib/**
 download/q5.6.tgz
 .htpasswd

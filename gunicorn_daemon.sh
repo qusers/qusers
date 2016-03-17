@@ -18,7 +18,7 @@ export PYTHONPATH=$PROJDIR:$PYTHONPATH
 RUNDIR=$(dirname $SOCKFILE)
 test -d $RUNDIR || mkdir -p $RUNDIR
 
-# Start your Django Unicorn
+# Start your Gunicorn APP
 # Programs meant to be run under supervisor should not daemonize themselves (do not use --daemon)
 #exec  gunicorn ${DJANGO_WSGI_MODULE}:application \
 echo  "gunicorn ${HTML_WSGI_MODULE}:application \      
@@ -27,5 +27,5 @@ echo  "gunicorn ${HTML_WSGI_MODULE}:application \
 --user=$USER --group=$GROUP \
 --log-level=debug \
 --bind=unix:$SOCKFILE \
---error-logfile /srv/www/tothml5/logs/gunicorn.errors \
---log-file /srv/www/tohtml5/logs/gunicorn.log"
+--error-logfile /srv/www/qwebsite/logs/gunicorn.errors \
+--log-file /srv/www/qwebsite/logs/gunicorn.log"

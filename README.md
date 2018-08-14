@@ -1,7 +1,7 @@
 Code for the Q-website
 --------------------------------------------------------------------------------
 
-###Versioning for the Q-website.
+## Versioning for the Q-website.  
 
 Since the qwebsite is going to be hosted in an oldish machine in peril of dying
 at anytime we have kept the code simple, that is, pure css3 and html5, and a
